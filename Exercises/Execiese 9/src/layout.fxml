@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefWidth="400" prefHeight="400"
+      fx:controller="AppController">
+    <GridPane vgap="5" hgap="5" alignment="CENTER">
+        <!-- Division button -->
+        <Button fx:id="btnDivide" text="/" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="100"
+                prefHeight="30" onAction="#computed"/>
+        <!-- Multiplication button -->
+        <Button fx:id="btnMultiply" text="*" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="100"
+                prefHeight="30" onAction="#computed"/>
+        <!-- Wig calculation button -->
+        <Button fx:id="btnPlus" text="+" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="100"
+                prefHeight="30" onAction="#computed"/>
+        <!-- Subtraction button -->
+        <Button fx:id="btnSubtract" text="-" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="100"
+                prefHeight="30" onAction="#computed"/>
+        <!-- Number 1 -->
+        <TextField fx:id="tfNum1" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="100"
+                   prefHeight="30"/>
+        <TextField fx:id="tfNum2" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="100"
+                   prefHeight="30"/>
+        <!-- Number 2 -->
+        <Label fx:id="lDetail" text="Input number and click button." GridPane.rowIndex="3" prefWidth="200"
+               prefHeight="30" alignment="CENTER"
+               GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+        <!-- Perform operation button -->
+        <Button fx:id="btnClear" text="Clear" GridPane.rowIndex="4" prefWidth="200" prefHeight="30"
+                GridPane.columnIndex="0" GridPane.columnSpan="2" onAction="#computed"/>
+    </GridPane>
+</VBox>
