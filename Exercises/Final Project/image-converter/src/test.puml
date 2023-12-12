@@ -1,0 +1,11 @@
+@startuml
+
+class IndexController
+class ImageAttr
+class ImageUtils
+interface ImageHandler
+class ImageHandlerComposition
+class Main
+
+
+@enduml
